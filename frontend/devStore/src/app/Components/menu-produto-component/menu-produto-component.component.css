@@ -2,13 +2,13 @@
 background-color: rgb(0, 153, 94);
 border: solid rgb(0, 153, 94);
 margin-right: 1%;
-width: 30%;
+width: 20%;
 
 }
 
 .btn-primary:hover {
-    background-color: hsl(263, 83%, 19%); 
-    border: solid hsl(263, 83%, 19%);
+    background-color: rgb(2, 96, 60);
+    border: solid rgb(2, 96, 60);
 
 }
 
