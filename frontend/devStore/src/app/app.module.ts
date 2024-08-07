@@ -8,6 +8,9 @@ import { TitleComponentComponent } from './Components/title-component/title-comp
 import { MenuProdutoComponentComponent } from './Components/menu-produto-component/menu-produto-component.component';
 import { MenuGeralComponentComponent } from './Components/menu-geral-component/menu-geral-component.component';
 import { TelaResultadosComponentComponent } from './Components/tela-resultados-component/tela-resultados-component.component';
+import { CategoriaListaComponent } from './Components/categoria/categoria-lista/categoria-lista.component';
+import { CategoriaFormComponent } from './Components/servicos/categoria-form/categoria-form.component';
+import { CategoriaDetalheComponent } from './Components/servicos/categoria-detalhe/categoria-detalhe.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { TelaResultadosComponentComponent } from './Components/tela-resultados-c
     TitleComponentComponent,
     MenuProdutoComponentComponent,
     MenuGeralComponentComponent,
-    TelaResultadosComponentComponent
+    TelaResultadosComponentComponent,
+    CategoriaListaComponent,
+    CategoriaFormComponent,
+    CategoriaDetalheComponent,
   ],
   imports: [
     BrowserModule,
