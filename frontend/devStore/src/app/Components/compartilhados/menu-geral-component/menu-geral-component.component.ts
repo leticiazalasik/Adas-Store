@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Categoria } from '../../interfaces/categoria';
 
 @Component({
   selector: 'app-menu-geral-component',
@@ -7,4 +8,5 @@ import { Component } from '@angular/core';
 })
 export class MenuGeralComponentComponent {
 
+ 
 }

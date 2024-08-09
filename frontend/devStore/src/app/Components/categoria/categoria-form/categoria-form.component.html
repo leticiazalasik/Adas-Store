@@ -1,0 +1,23 @@
+<h2>{{ this.isEdicao ? 'Editar Categoria' : 'Nova Categoria' }}</h2>
+<form (submit)="salvar()">
+
+    <div class="col-6">
+        <label for="id">Id</label>
+        <input type="text" id="id" name="id" [(ngModel)]="this.categoria.id">
+    </div>
+
+    <div class="col-12">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" [(ngModel)]="this.categoria.nome">
+    </div>
+
+    <div class="col-4">
+        <input type="checkbox" id="status" name="status" [(ngModel)]="this.categoria.status">
+        <label class="m-2" for="status">Categoria ativa</label>
+    </div>
+
+    <button type="submit" class="button-submit">{{ this.isEdicao ? 'Salvar alterações' : 'Adicionar novo' }}</button>
+
+    <button routerLink="/categorias">Cancelar</button>
+
+</form>

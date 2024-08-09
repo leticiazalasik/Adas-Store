@@ -1,1 +1,50 @@
-<p>categoria-lista works!</p>
+<div class="modulo">
+
+  <div class="col-12 titulo">
+    <h4>Módulo Categoria</h4>
+  </div>
+
+  <div class="col-12 botoes">
+    <button>
+      <i class="bi bi-funnel-fill"></i>
+      Filtrar
+    </button>
+    <button routerLink="/categoria/nova">
+      <i class="bi bi-plus-lg"></i>
+      Novo
+    </button>
+  </div>
+
+  <div class="col-12 tabela">
+    <table class="table table-hover m-0">
+      <thead>
+        <tr>
+          <th scope="col">Id</th>
+          <th scope="col">Nome</th>
+          <th scope="col">Status</th>
+          <th scope="col">Ações</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let categoria of categorias">
+          <td>{{ categoria.id }}</td>
+          <td>{{ categoria.nome }}</td>
+          <td>{{ categoria.status ? 'Ativa' : 'Inativa' }}</td>
+          <td>
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Opções
+              </button>
+              <ul class="dropdown-menu">
+                <li><button class="dropdown-item" type="button">Ver detalhe</button></li>
+                <li><button class="dropdown-item" type="button">Editar</button></li>
+                <li><button class="dropdown-item" type="button">Excluir</button></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>

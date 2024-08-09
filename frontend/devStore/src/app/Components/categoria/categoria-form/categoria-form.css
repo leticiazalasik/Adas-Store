@@ -1,0 +1,23 @@
+form input[type=text] {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: solid 1px silver;
+}
+form label {
+  font-size: 16px;
+}
+
+.botoes {
+  display: flex;
+  justify-content: end;
+  padding: 12px 0;
+}
+.botoes button {
+  border: none;
+  background-color: #009367;
+  color: #FFF;
+  padding: 8px 24px;
+  margin-left: 8px;
+  border-radius: 4px;
+}/*# sourceMappingURL=categoria-form.css.map */

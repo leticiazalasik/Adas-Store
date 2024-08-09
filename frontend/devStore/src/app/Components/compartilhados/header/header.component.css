@@ -1,0 +1,28 @@
+
+header{
+    background-image: url('../../../../assets/img/header.jpg');
+    background-size: cover;
+    padding: 20px 0;
+    color: white;
+
+    .logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .usuario-informacoes{
+        display: flex;
+        justify-content: end;
+        align-items: center;
+
+        div{
+            margin-left: 16px;
+        }
+        
+        img{
+            width: 50px;
+            border-radius: 50%;
+        }
+    }
+}

@@ -3,33 +3,32 @@ import { BrowserModule, provideClientHydration } from '@angular/platform-browser
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './Components/header/header.component';
-import { TitleComponentComponent } from './Components/title-component/title-component.component';
-import { MenuProdutoComponentComponent } from './Components/menu-produto-component/menu-produto-component.component';
-import { MenuGeralComponentComponent } from './Components/menu-geral-component/menu-geral-component.component';
-import { TelaResultadosComponentComponent } from './Components/tela-resultados-component/tela-resultados-component.component';
+import { HeaderComponent } from './Components/compartilhados/header/header.component';
+
+import { MenuGeralComponentComponent } from './Components/compartilhados/menu-geral-component/menu-geral-component.component';
 import { CategoriaListaComponent } from './Components/categoria/categoria-lista/categoria-lista.component';
-import { CategoriaFormComponent } from './Components/servicos/categoria-form/categoria-form.component';
 import { CategoriaDetalheComponent } from './Components/servicos/categoria-detalhe/categoria-detalhe.component';
+import { HttpClientModule, provideHttpClient, withFetch } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import { CategoriaFormComponent } from './Components/categoria/categoria-form/categoria-form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    TitleComponentComponent,
-    MenuProdutoComponentComponent,
     MenuGeralComponentComponent,
-    TelaResultadosComponentComponent,
     CategoriaListaComponent,
-    CategoriaFormComponent,
     CategoriaDetalheComponent,
+    CategoriaFormComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [
-    provideClientHydration()
+    provideHttpClient(withFetch())
   ],
   bootstrap: [AppComponent]
 })

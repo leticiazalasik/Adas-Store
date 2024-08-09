@@ -1,0 +1,35 @@
+/* Estilos para a classe .modulo */
+
+/* Estilização do título */
+.modulo .titulo {
+    background-color: #f6f4f4;
+    padding: 16px;
+    border-left: solid 12px #d9326f;
+}
+
+/* Estilização dos botões */
+.modulo .botoes {
+    display: flex;
+    justify-content: flex-end;
+    padding: 12px 0;
+}
+
+.modulo .botoes button {
+    border: none;
+    background-color: #c6074d;
+    color: #FFF;
+    padding: 8px 24px;
+    margin-left: 8px;
+    border-radius: 4px;
+}
+
+/* Efeito de hover para os botões */
+.modulo .botoes button:hover {
+    background-color: #a1043d;
+}
+
+/* Estilização da tabela */
+.modulo .tabela {
+    background-color: #f6f4f4;
+    padding: 16px;
+}
