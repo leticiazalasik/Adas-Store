@@ -1,1 +1,11 @@
-<p>produto-detalhe works!</p>
+<h2>Detalhes do Produto</h2>
+<div *ngIf="produto">
+
+    <p><strong>ID:</strong>{{ produto.id}}</p>
+    <p><strong>Nome:</strong>{{produto.nome}}</p>
+    <p><strong>Preco:</strong>{{produto.preco}}</p>
+    <p><strong>Quantidade:</strong>{{produto.quantidade}}</p>
+    <a [routerLink]="['/produto/editar', produto.id]">Editar</a>
+    <a [routerLink]="['/produtos']">Voltar</a>
+
+</div>
