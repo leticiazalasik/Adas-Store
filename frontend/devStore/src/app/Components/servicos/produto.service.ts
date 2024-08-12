@@ -8,13 +8,27 @@ import { Produto } from '../interfaces/produto';
 })
 export class ProdutoService {
 
-  constructor(private http: HttpClient) { }
-
   private apiUrl = 'http://localhost:8080/produto';
+
+  constructor(private http:HttpClient) { }
 
   findAll(): Observable<Produto[]>{
     return this.http.get<Produto[]>(this.apiUrl); 
   }
+findById(id:number): Observable<Produto>{
+  return this.http.get<Produto>(`$(this.apiUrl)/${id}`); 
+}
+add(produto:Produto):Observable<Produto>{
+  return this.http.post<Produto>(this.apiUrl, produto);
+}
 
+update(produto: Produto): Observable<Produto>{
+  return this.http.put<Produto>(`${this.apiUrl}/${produto.id}`, produto);
+
+}
+
+delete(id:number):Observable<void>{
+  return this.http.delete<void>(`${this.apiUrl}/${id}`); 
+}
   
 }

@@ -7,7 +7,7 @@ import { CategoriaFormComponent } from './Components/categoria/categoria-form/ca
 const routes: Routes = [
   {path: 'categorias', component: CategoriaListaComponent}, 
   {path: 'categoria/nova', component:CategoriaFormComponent},
-  {path: 'categoria/edita:id', component:CategoriaFormComponent},
+  {path: 'categoria/editar/:id', component:CategoriaFormComponent},
   {path: 'categoria/:id', component: CategoriaDetalheComponent},
   {path: '', redirectTo: '/categorias', pathMatch: 'full'}
 
