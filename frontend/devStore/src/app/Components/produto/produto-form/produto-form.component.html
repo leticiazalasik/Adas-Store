@@ -1,1 +1,21 @@
-<p>produto-form works!</p>
+<h2>{{isEdicao ? 'Editar Produto' : 'Novo Produto'}}</h2>
+
+<form (ngSubmit)="salvar()">
+
+<div>
+    <label for="nome">Nome:</label>
+    <input id="nome" [(ngModel)]="produto.nome" name="nome" required>
+</div>
+
+<div>
+<label for="preco">Preço:</label>
+<input id="preco" type="number" [(ngModel)]="produto.preco" name="preco" required>
+</div>
+
+<div>
+    <label for="quantidade">Quantidade:</label>
+    <input id="quantidade" type="number" [(ngModel)]="produto.quantidade" name="=quantidade" required="">
+</div>
+
+<button type="submit">{{isEdicao ? 'Salvar Alterações' : 'Adicionar Produto'}}</button>
+</form>
