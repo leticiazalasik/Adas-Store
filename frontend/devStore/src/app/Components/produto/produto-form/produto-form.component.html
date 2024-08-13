@@ -2,17 +2,22 @@
 
 <form (ngSubmit)="salvar()">
 
-<div>
+    <div class="col-6" *ngIf="this.isEdicao">
+        <label for="id">Id</label>
+        <input type="text" id="id" name="id" readonly [(ngModel)]="this.produto.id">
+    </div>
+
+<div class="col-12">
     <label for="nome">Nome:</label>
-    <input id="nome" [(ngModel)]="produto.nome" name="nome" required>
+    <input id="nome" type="text" [(ngModel)]="produto.nome" name="nome" required>
 </div>
 
-<div>
+<div  class="col-12">
 <label for="preco">Preço:</label>
 <input id="preco" type="number" [(ngModel)]="produto.preco" name="preco" required>
 </div>
 
-<div>
+<div  class="col-12">
     <label for="quantidade">Quantidade:</label>
     <input id="quantidade" type="number" [(ngModel)]="produto.quantidade" name="=quantidade" required="">
 </div>

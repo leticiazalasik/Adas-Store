@@ -30,7 +30,7 @@ public class CategoriaController {
         return ResponseEntity.ok(categoriaService.save(categoria));
     }
 
-    @PutMapping
+    @PutMapping("/{id}")
     public ResponseEntity<Categoria> update(@RequestBody Categoria categoria){
         return ResponseEntity.ok(categoriaService.save(categoria));
     }

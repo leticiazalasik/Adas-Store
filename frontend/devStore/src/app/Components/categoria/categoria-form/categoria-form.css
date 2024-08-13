@@ -13,7 +13,7 @@ form label {
   justify-content: end;
   padding: 12px 0;
 }
-.botoes button {
+button {
   border: none;
   background-color: #009367;
   color: #FFF;
