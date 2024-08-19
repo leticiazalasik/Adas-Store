@@ -1,2 +1,2 @@
 # Adas-Store
-em andamento
+em andamento...
